@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Recommendations</title>
+</head>
+
+<div class=page>
+  <h1>On comparing the skill set of User {{u}} with other existing users,<br>
+        We found User {{s}} to be most similar to User {{u}}</h1>
+  <h2>Therefore, we suggest the same jobs that were recommended to User {{s}} here</h2>   
+  <h1>Top 10 Recommendations</h1>
+  {% for table in tables %}
+          {{ table|safe }}
+  {% endfor %}
+</div>
+</html>

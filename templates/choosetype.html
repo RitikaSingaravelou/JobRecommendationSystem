@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Recommendation System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body >
+            <div class="c">
+                <h2><u>Welcome!!<br>This system recommends suitable jobs based on the job seeker's skill set and domain of interest </u></h2><br>
+                <form action="{{ url_for('choice') }}" method="post">
+                    <div class="form-group">
+                        <label for="sel2">Choose type of filtering preferred:</label><br><br>
+                        <select class="form-control" id="sel2" name="selected_metric">
+                            <option>content-based filtering</option>
+                            <option>collaborative filtering</option>
+                        </select>
+                    </div>
+                    
+                    <input type="submit" class="btn btn-light" id="subbut" value="Select"/>
+                </form>
+            </div>
+      
+</body>
+</html>
