@@ -1,4 +1,4 @@
-# CIP-Batch6-JobRecommendationSystem
+# JobRecommendationSystem
 Code Submission for Creative and Innovative Project
 
 
